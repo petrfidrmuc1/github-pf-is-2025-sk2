@@ -42,8 +42,21 @@ while (again == "a")
     }
 
 
+    // Výstup zadaných hodnot
     Console.WriteLine();
-    Console.WriteLine("pro opakovani stiskni a");
-    again = Console.ReadLine();
+    Console.WriteLine("=========================================");
+    Console.WriteLine("Zadali jste tyto hodnoty:");
+    Console.WriteLine("První číslo řady: {0}", first);
+    Console.WriteLine("Poslední číslo řady: {0}", last);
+    Console.WriteLine("Diference řady: {0}", step);
+    Console.WriteLine("=========================================");
+    Console.WriteLine("První číslo řady: {0}; postední číslo: {1}; diferenci: {2}", first, last, step);
+    Console.WriteLine("=========================================");
 
+
+
+    Console.WriteLine();
+    Console.WriteLine("pro opakovani programu stiskni a");
+    again = Console.ReadLine();
 }
+
