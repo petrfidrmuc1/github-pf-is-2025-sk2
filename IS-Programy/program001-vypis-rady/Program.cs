@@ -65,15 +65,8 @@ while (again == "a")
         Console.WriteLine(current);
         current = current + step; // pricteni diference
     }
+
     
-    
-
-
-
-
-
-
-
 
     Console.WriteLine();
     Console.WriteLine("pro opakovani programu stiskni a");
