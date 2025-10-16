@@ -23,7 +23,22 @@ while (again == "a")
     int first;
     while (!int.TryParse(Console.ReadLine(), out first))
     {
-        Console.WriteLine("nezadal jsi cele cislo");
+        Console.Write("nezadal jsi cele cislo");
+    }
+
+
+    Console.Write("Zadej posledni cislo rady (musi byt cele)");
+    int last;
+    while (!int.TryParse(Console.ReadLine(), out last))
+    {
+        Console.Write("nezadal jsi cele cislo");
+    }
+
+    Console.Write("Zadej diferenci rady (musi byt cele)");
+    int step;
+    while (!int.TryParse(Console.ReadLine(), out step))
+    {
+        Console.Write("nezadal jsi cele cislo");
     }
 
 
