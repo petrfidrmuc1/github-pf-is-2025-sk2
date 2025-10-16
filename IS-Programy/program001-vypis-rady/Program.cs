@@ -54,9 +54,31 @@ while (again == "a")
     Console.WriteLine("=========================================");
 
 
+    // Vypis rady
+    Console.WriteLine();
+    Console.WriteLine("=========================================");
+    Console.WriteLine("Výpis číselné řady");
+
+    int current = first;
+    while (current <= last)
+    {
+        Console.WriteLine(current);
+        current = current + step; // pricteni diference
+    }
+    
+    
+
+
+
+
+
+
+
 
     Console.WriteLine();
     Console.WriteLine("pro opakovani programu stiskni a");
     again = Console.ReadLine();
-}
 
+
+
+}
