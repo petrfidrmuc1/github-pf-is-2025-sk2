@@ -36,7 +36,7 @@ while (again == "a")
     {
         for (int j = 1; j <= width; j++)
         {
-            Console.Write("*");
+            Console.Write("* ");
         }
         Console.WriteLine();
     }
