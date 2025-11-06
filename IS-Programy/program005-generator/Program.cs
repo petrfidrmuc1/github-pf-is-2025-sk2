@@ -49,12 +49,12 @@ while (again == "a")
     int[] myRandNumbs = new int[n];
     Random myRandNumb = new Random();
     //Random myRandNumb = new Random(10);
-    Console.WriteLine("Nahodna cisla: ")
+    Console.WriteLine("Nahodna cisla: ");
 
     for (int i = 0; i < n; i++)
     {
         myRandNumbs[i] = myRandNumb.Next(lowerbound, upperbound);
-        Console.Write("{0}; " ,myRandNumbs[i])
+        Console.Write("{0}; ", myRandNumbs[i]);
     }
 
 
