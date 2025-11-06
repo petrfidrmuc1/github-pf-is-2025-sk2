@@ -49,11 +49,23 @@ while (again == "a")
     int[] myRandNumbs = new int[n];
     Random myRandNumb = new Random();
     //Random myRandNumb = new Random(10);
+
+
+
+    int negativeNumbs = 0;
+    int positiveNumbs = 0;
+    int zeros = 0;
+
+    int evenNumbs = 0;
+    int oddNumbs = 0;
+
+
+
     Console.WriteLine("Nahodna cisla: ");
 
     for (int i = 0; i < n; i++)
     {
-        myRandNumbs[i] = myRandNumb.Next(lowerbound, upperbound);
+        myRandNumbs[i] = myRandNumb.Next(lowerbound, upperbound + 1);
         Console.Write("{0}; ", myRandNumbs[i]);
     }
 
@@ -62,7 +74,11 @@ while (again == "a")
 
 
 
-        Console.WriteLine();
+
+
+
+
+    Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a");
     again = Console.ReadLine();
 

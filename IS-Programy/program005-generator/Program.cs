@@ -54,6 +54,28 @@ while (again == "a")
     for (int i = 0; i < n; i++)
     {
         myRandNumbs[i] = myRandNumb.Next(lowerbound, upperbound);
+         if (myRandNumb[i] < 0)
+        {
+            negativeNumbs++;
+        }
+        else if (myRandNumb[i] > 0)
+        {
+            positiveNumbs++;
+        }
+        else
+        {
+            zeros++;
+        }
+
+        if (myRandNumb[i] % 2 == 0)
+        {
+            evenNumbs++;
+        }
+        else
+        {
+            oddNumbs++;
+        }
+    
         Console.Write("{0}; ", myRandNumbs[i]);
     }
 
