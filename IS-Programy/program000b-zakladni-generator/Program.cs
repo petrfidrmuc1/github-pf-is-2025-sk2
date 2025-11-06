@@ -52,14 +52,6 @@ while (again == "a")
 
 
 
-    int negativeNumbs = 0;
-    int positiveNumbs = 0;
-    int zeros = 0;
-
-    int evenNumbs = 0;
-    int oddNumbs = 0;
-
-
 
     Console.WriteLine("Nahodna cisla: ");
 

@@ -49,25 +49,37 @@ while (again == "a")
     int[] myRandNumbs = new int[n];
     Random myRandNumb = new Random();
     //Random myRandNumb = new Random(10);
+
+    int negativeNumbs = 0;
+    int positiveNumbs = 0;
+    int zeros = 0;
+
+    int evenNumbs = 0;
+    int oddNumbs = 0;
+
+
+
+
     Console.WriteLine("Nahodna cisla: ");
 
     for (int i = 0; i < n; i++)
     {
         myRandNumbs[i] = myRandNumb.Next(lowerbound, upperbound);
-         if (myRandNumb[i] < 0)
+
+         if (myRandNumbs[i] == 0)
         {
-            negativeNumbs++;
+            zeros++;
         }
-        else if (myRandNumb[i] > 0)
+        else if (myRandNumbs[i] > 0)
         {
             positiveNumbs++;
         }
         else
         {
-            zeros++;
+            negativeNumbs++;
         }
 
-        if (myRandNumb[i] % 2 == 0)
+        if (myRandNumbs[i] % 2 == 0)
         {
             evenNumbs++;
         }
@@ -79,12 +91,22 @@ while (again == "a")
         Console.Write("{0}; ", myRandNumbs[i]);
     }
 
+    Console.WriteLine();
+    Console.WriteLine("===========================================================");
+    Console.WriteLine("===========================================================");
+    Console.WriteLine("Pocet zapornych cisel: {0}", negativeNumbs);
+    Console.WriteLine("Pocet kladnych cisel: {0}", positiveNumbs);
+    Console.WriteLine("Pocet nul: {0}", zeros);
+    Console.WriteLine("Pocet sudych cisel: {0}", evenNumbs);
+    Console.WriteLine("Pocet lichych cisel: {0}", oddNumbs);
+    Console.WriteLine("===========================================================");
+    Console.WriteLine("===========================================================");
+    Console.WriteLine();
 
 
 
 
-
-        Console.WriteLine();
+    Console.WriteLine();
     Console.WriteLine("Pro opakování programu stiskněte klávesu a");
     again = Console.ReadLine();
 
